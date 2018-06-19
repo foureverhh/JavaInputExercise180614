@@ -2,11 +2,9 @@ package Nackademin.com;
 
 import javax.swing.*;
 import java.io.*;
-import java.text.NumberFormat;
 import java.util.Locale;
-import java.util.Scanner;
 
-public class Main {
+public class JavaTest {
 
     public static void main(String[] args) throws IOException {
 
@@ -75,10 +73,19 @@ public class Main {
         System.out.println(""+scanner.locale());
         scanner.close();
         */
-        testPrintWriter1();
-        testPrintWriter2();
-        testPrintWriter3();
-        testPrintWriterApi();
+        //testPrintWriter1();
+        //testPrintWriter2();
+        //testPrintWriter3();
+        //testPrintWriterApi();
+
+        //test > file name
+        Locale.setDefault(Locale.UK);
+        String s = JOptionPane.showInputDialog("x?");
+        double x = Double.parseDouble(s);
+        for(int i = -5; i <= 5; i++ ){
+           // double y = MsHandling.countingZhiShu(x,i);
+            System.out.println(i);
+        }
 
     }
 
